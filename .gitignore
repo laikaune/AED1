@@ -1,0 +1,10 @@
+# Ignorar diretórios de cache
+~/.cache/
+
+# Ignorar histórico de shell
+.bash_history
+
+# Ignorar arquivos temporários e outros gerados pelo sistema
+*~
+.DS_Store
+*.log
