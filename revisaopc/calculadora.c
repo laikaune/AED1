@@ -4,13 +4,15 @@
 void menu();
 int soma (int numero1, int numero2);
 int subtracao(int numero1, int numero2);
-float divisao(int numero1, int numero2);
+double divisao(int numero1, int numero2);
 int multiplicacao(int numero1, int numero2);
 double potencia(int base, int expoente);
 
 int main()
 {
     int operacao, numero1, numero2, resultado;
+    double resultadodouble;
+
     menu ();
     scanf ("%d", &operacao);
 
@@ -32,16 +34,16 @@ int main()
 
         break;
     case 3:
-        resultado = divisao(numero1, numero2);
-            printf ("%d", resultado);
+        resultadodouble = divisao(numero1, numero2);
+            printf ("%.2f", resultadodouble);
         break;
     case 4:
        resultado = multiplicacao(numero1, numero2);
         printf ("%d", resultado);
         break;
     case 5:
-       resultado = potencia(numero1, numero2);
-        printf ("%f", resultado);
+       resultadodouble = potencia(numero1, numero2);
+        printf ("%.2f", resultadodouble);
         
         break;
     default:
@@ -77,13 +79,12 @@ int multiplicacao (int numero1, int numero2)
     return numero1 * numero2;
 }
 
-float divisao(int numero1, int numero2)
+double divisao(int numero1, int numero2)
 {
-    return (float)numero1 / (float)numero2;
+    return (double)numero1 / (double)numero2;
 }
 
 double potencia(int base, int expoente)
 {
     return pow(base, expoente);
 }
-
