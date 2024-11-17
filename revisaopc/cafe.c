@@ -39,7 +39,7 @@ int main()
     {
         pacotecafe = iraomercado();
         printf ("voce comprou %d pacotes de cafe", pacotecafe);
-    } else
+    } else // aqui ja é a ultima opcao, que é se n tiver agua
     {
         printf ("Esquente água!\n");
     }
