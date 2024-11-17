@@ -10,11 +10,12 @@ int main()
     int pacotecafe, xicara, quantidade;
     char respostacafe[4], respostaagua[4];
     bool temcafe, temaguaquente;
-
-    printf ("Tem café?\n");
+    while (temcafe == false || temaguaquente == false){
+    printf ("\nTem café?\n");
      scanf ("%3s", respostacafe); // le apenas 3 letras
 
      temcafe = verificarrespostas(respostacafe);
+
     printf ("Tem água quente? \n");
         scanf ("%3s", respostaagua);
      temaguaquente = verificarrespostas(respostaagua);
@@ -40,7 +41,8 @@ int main()
         printf ("voce comprou %d pacotes de cafe", pacotecafe);
     } else
     {
-        printf ("Esquente água.");
+        printf ("Esquente água!\n");
+    }
     }
 }
 
