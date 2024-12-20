@@ -1,5 +1,6 @@
 // ler um vetor de 10 idades, infomar a idade maxima e a idade minima
 #include <stdio.h>
+// ATENÇÃO: adicionar a posicao que esta a idade minima.
 int main ()
 {
     int idade[5], idadeMax, idadeMin;
