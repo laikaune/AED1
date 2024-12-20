@@ -36,6 +36,6 @@ int main ()
         }
     }
 
-    printf ("Idade maxima: %d\n", idadeMax);
+    printf ("Idade máxima: %d\n", idadeMax);
     printf ("Idade minima: %d\n", idadeMin);
 }
